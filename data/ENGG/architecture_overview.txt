@@ -1,0 +1,20 @@
+ACME Engineering - System Architecture Overview (ENGG)
+
+Primary Stack:
+- Backend: Python 3.11, FastAPI, SQLAlchemy, PostgreSQL 15, Redis 7.
+- Frontend: Angular 17 + Tailwind CSS.
+- Infra: AWS (us-east-1, eu-west-1), EKS for container orchestration, Terraform for IaC.
+- Observability: Datadog (metrics/traces), Loki (logs), PagerDuty for on-call.
+
+Internal services:
+- auth-service: OIDC identity broker, JWT issuance, MFA enforcement.
+- billing-service: Stripe integration, invoice generation, dunning workflows.
+- inventory-service: stock-keeping, reservations, warehouse sync.
+- search-service: OpenSearch cluster powering catalog and admin search.
+
+Deployment:
+- CI: GitHub Actions, deploy via ArgoCD.
+- Two-week sprints; canary -> 10% -> 100% rollout policy.
+- SLA: 99.95% for P0 services.
+
+This document is restricted to Engineering staff.

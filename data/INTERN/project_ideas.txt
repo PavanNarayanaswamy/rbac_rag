@@ -1,0 +1,10 @@
+Suggested Intern Project Ideas - Summer 2026 (INTERN)
+
+1. Build an internal ChatOps bot for Slack that answers FAQ from our public knowledge base.
+2. Migrate one legacy CRON job to a Temporal workflow.
+3. Add OpenTelemetry instrumentation to the inventory-service.
+4. Prototype a mobile companion app for the warehouse picker workflow.
+5. Build a public-facing changelog page using the existing release-notes API.
+
+Pick a project in week 2 with your manager's input. All projects must have a clear demo by week 10.
+This document is for interns and their managers.

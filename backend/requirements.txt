@@ -1,0 +1,25 @@
+# FastAPI + server
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+
+# Auth
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+
+# DB
+SQLAlchemy==2.0.32
+
+# RAG / vectors / embeddings
+chromadb==0.5.5
+langchain==0.2.16
+langchain-community==0.2.16
+langchain-text-splitters==0.2.4
+sentence-transformers==3.0.1
+
+# Validation
+pydantic==2.9.0
+
+# Optional: for OpenAI fallback if you swap providers
+# openai==1.40.0

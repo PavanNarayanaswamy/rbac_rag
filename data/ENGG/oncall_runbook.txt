@@ -1,0 +1,18 @@
+Engineering On-Call Runbook (ENGG)
+
+P0 incidents: respond within 5 minutes, ack via PagerDuty.
+P1 incidents: respond within 15 minutes during business hours, 30 minutes off-hours.
+
+Standard incident commands:
+- kubectl rollout restart deployment/<name> -n prod
+- kubectl logs -f deployment/<name> -n prod | tee /tmp/incident.log
+- terraform plan -var-file=prod.tfvars (NEVER apply during an incident without IC approval)
+
+Escalation tree:
+1. Primary on-call (rotation in PagerDuty schedule "platform-primary")
+2. Secondary on-call
+3. Engineering Manager
+4. VP Engineering
+
+Postmortem template lives at docs/templates/postmortem.md. Blameless culture - root cause focus.
+This runbook is restricted to Engineering staff only.

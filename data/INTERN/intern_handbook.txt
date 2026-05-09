@@ -1,0 +1,22 @@
+ACME Intern Handbook (INTERN)
+
+Welcome! Your internship runs 12 weeks with the option to extend.
+
+Schedule:
+- Week 1: Orientation, laptop setup, buddy assignment.
+- Week 2-10: Project work with your team.
+- Week 11: Final presentation rehearsal.
+- Week 12: Final presentation to leadership and intern wrap party.
+
+Resources available to you:
+- Slack #interns-2026 channel
+- Weekly intern lunch every Wednesday
+- Monthly speaker series (past speakers: CTO, VP Product)
+- LinkedIn Learning license (free)
+
+Performance expectations:
+- Weekly 1:1 with your manager
+- Mid-internship review at week 6
+- Final review and return-offer decision by week 10
+
+This document is for interns only.

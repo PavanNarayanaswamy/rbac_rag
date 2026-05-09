@@ -1,0 +1,58 @@
+<div class="login-shell">
+  <div class="login-card">
+    <div class="brand">
+      <div class="lock">&#x1F512;</div>
+      <h1>ACME Knowledge Hub</h1>
+      <p class="tag">Role-aware retrieval. Sign in to access your data rooms.</p>
+    </div>
+
+    <form (ngSubmit)="submit()" #f="ngForm" autocomplete="on">
+      <label>
+        Username
+        <input
+          type="text"
+          name="username"
+          [(ngModel)]="username"
+          required
+          autocomplete="username"
+          placeholder="e.g. eng"
+          [disabled]="loading()"
+        />
+      </label>
+
+      <label>
+        Password
+        <input
+          type="password"
+          name="password"
+          [(ngModel)]="password"
+          required
+          autocomplete="current-password"
+          placeholder="Your password"
+          [disabled]="loading()"
+        />
+      </label>
+
+      <button type="submit" [disabled]="loading() || !username || !password">
+        {{ loading() ? 'Signing in...' : 'Sign in' }}
+      </button>
+
+      <div class="error" *ngIf="error()">{{ error() }}</div>
+    </form>
+
+    <div class="demo">
+      <p class="demo-title">Demo accounts</p>
+      <div class="demo-grid">
+        <button
+          *ngFor="let a of demoAccounts"
+          type="button"
+          class="demo-chip"
+          (click)="fillDemo(a.user, a.pass)"
+        >
+          <span class="chip-role">{{ a.role }}</span>
+          <span class="chip-user">{{ a.user }}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

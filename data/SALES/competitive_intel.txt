@@ -1,0 +1,11 @@
+Competitive Intelligence Brief (SALES)
+
+Primary competitors:
+1. Globex Inc. - strong in retail SMB, weaker in compliance features. Their pricing is ~15% lower but their support SLA is 48h vs our 4h.
+2. Initech - enterprise focused, slow to ship. Their AI features lag ours by ~2 quarters.
+3. Hooli - aggressive in EMEA, partnership with major SI firms. Watch for bundled deals.
+
+Talking points vs Globex: emphasize our 4-hour support SLA, SOC2 Type II, and native HRIS connectors.
+Talking points vs Initech: emphasize time-to-value (avg 14 days vs their 90+).
+
+Restricted to Sales. Do NOT share with prospects directly without manager approval.

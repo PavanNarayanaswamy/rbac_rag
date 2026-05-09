@@ -1,0 +1,18 @@
+CONFIDENTIAL - Board Strategy Memo FY2026 (CLevel)
+
+Strategic Priorities:
+1. Acquisition target: evaluating "Initech" Q3 2026, indicative valuation $180M-$220M.
+2. Series E fundraise: targeting $300M at $2.4B valuation, lead investor discussions ongoing with Sequoia and a16z.
+3. International expansion: opening Tokyo and Sao Paulo offices in Q2 2026.
+
+Financial targets:
+- ARR: $145M (target) vs $112M (FY25 actual).
+- Gross margin: 78%+.
+- Net retention: 125%+.
+
+Risk register:
+- Regulatory: pending FTC inquiry (low probability, advised by Wachtell).
+- Talent: VP of Engineering succession planning underway.
+- Competitive: Globex rumored to be raising at $4B; could trigger price war.
+
+This memo is HIGHLY CONFIDENTIAL. C-Level and Board only.

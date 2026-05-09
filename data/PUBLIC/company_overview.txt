@@ -1,0 +1,18 @@
+ACME Corporation - Company Overview (PUBLIC)
+
+ACME Corporation is a global technology company founded in 2010, headquartered in San Francisco, California.
+We build enterprise software for the manufacturing, logistics, and retail sectors.
+
+Our mission: "Empower every business to operate intelligently."
+
+Office locations: San Francisco (HQ), New York, London, Bangalore, Singapore.
+Total employees worldwide: approximately 2,400.
+
+Public values:
+- Customer obsession
+- Operational excellence
+- Long-term thinking
+- Trust and transparency
+
+For media inquiries, contact press@acme.example.com.
+This document is publicly accessible to ALL employees regardless of role.

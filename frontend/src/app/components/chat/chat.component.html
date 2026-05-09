@@ -1,0 +1,109 @@
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="lock">&#x1F512;</div>
+      <div>
+        <div class="brand-title">ACME Hub</div>
+        <div class="brand-sub">Role-aware RAG</div>
+      </div>
+    </div>
+
+    <div class="user-card">
+      <div class="user-name">{{ user()?.full_name || user()?.username }}</div>
+      <div class="user-role">
+        <span class="role-pill" [style.background]="labelTone(user()?.role || '')">
+          {{ user()?.role }}
+        </span>
+      </div>
+      <div class="user-username">&#64;{{ user()?.username }}</div>
+    </div>
+
+    <div class="rooms">
+      <div class="rooms-title">Your Data Rooms</div>
+      <div *ngIf="isAdmin()" class="rooms-note">
+        You have access to <b>all</b> rooms.
+      </div>
+      <ul>
+        <li *ngFor="let r of rooms()">
+          <span class="dot" [style.background]="labelTone(r)"></span>
+          {{ r }}
+        </li>
+      </ul>
+    </div>
+
+    <button class="logout" (click)="logout()">Sign out</button>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <h2>Knowledge Assistant</h2>
+        <p class="topbar-sub">
+          Answers are grounded in documents your role is authorized to read.
+        </p>
+      </div>
+    </header>
+
+    <div #scroller class="messages">
+      <div *ngIf="turns().length === 0" class="empty">
+        <p class="empty-title">Ask a question to get started</p>
+        <p class="empty-sub">
+          Try: <i>"Summarize the on-call runbook"</i> or
+          <i>"What are our discount approval limits?"</i>
+        </p>
+      </div>
+
+      <div
+        *ngFor="let turn of turns(); trackBy: trackTurn"
+        class="turn"
+        [class.user]="turn.role === 'user'"
+        [class.assistant]="turn.role === 'assistant'"
+      >
+        <div class="bubble" [class.error]="turn.error">
+          <div *ngIf="turn.loading" class="thinking">
+            <span></span><span></span><span></span>
+          </div>
+          <div *ngIf="!turn.loading" class="content">{{ turn.content }}</div>
+
+          <div *ngIf="turn.sources && turn.sources.length" class="sources">
+            <div class="sources-title">Sources</div>
+            <div class="source-list">
+              <div *ngFor="let s of turn.sources" class="source">
+                <span
+                  class="src-label"
+                  [style.background]="labelTone(s.access_label)"
+                >{{ s.access_label }}</span>
+                <span class="src-path">{{ s.source }}</span>
+                <span *ngIf="s.score !== undefined && s.score !== null" class="src-score">
+                  {{ (s.score * 100) | number:'1.0-0' }}%
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            *ngIf="turn.accessed_labels && turn.accessed_labels.length"
+            class="accessed"
+          >
+            Used rooms:
+            <span *ngFor="let l of turn.accessed_labels" class="mini-pill">{{ l }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form class="composer" (ngSubmit)="send()">
+      <textarea
+        [(ngModel)]="question"
+        name="question"
+        placeholder="Ask anything about your accessible documents... (Enter to send, Shift+Enter for newline)"
+        rows="2"
+        (keydown.enter)="onEnter($event)"
+        [disabled]="asking()"
+      ></textarea>
+      <button type="submit" [disabled]="!question.trim() || asking()">
+        {{ asking() ? '...' : 'Send' }}
+      </button>
+    </form>
+  </main>
+</div>

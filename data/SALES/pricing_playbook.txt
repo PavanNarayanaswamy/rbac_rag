@@ -1,0 +1,18 @@
+Sales Pricing Playbook - FY26 (SALES)
+
+List Pricing (USD/month):
+- Starter: $499 (up to 25 seats)
+- Growth: $1,999 (up to 100 seats)
+- Enterprise: starts at $5,000, custom quote.
+
+Discount Authority:
+- AE: up to 10% off list.
+- Sales Manager: up to 20% off list.
+- VP Sales: up to 35% off list.
+- Anything beyond requires CRO + CFO sign-off.
+
+Standard contract term is 12 months, NET-30 payment.
+Multi-year prepay: 8% additional discount for 24-month, 15% for 36-month.
+
+Q4 SPIFF: 1.5x commission on Enterprise deals closed before Dec 15.
+This document is restricted to the Sales organization.

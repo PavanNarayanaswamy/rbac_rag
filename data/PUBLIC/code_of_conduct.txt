@@ -1,0 +1,13 @@
+ACME Code of Conduct (PUBLIC)
+
+All employees, contractors, and interns must adhere to the following:
+
+1. Treat colleagues, customers, and vendors with respect.
+2. Protect confidential information and customer data.
+3. Avoid conflicts of interest; disclose any potential conflicts to your manager.
+4. No harassment, discrimination, or retaliation of any kind.
+5. Comply with all applicable laws including export controls and anti-bribery rules.
+6. Report concerns via the ethics hotline at ethics@acme.example.com.
+
+Violations may result in disciplinary action up to and including termination.
+This document applies to everyone at ACME.
