@@ -179,6 +179,30 @@ You should see an honest "I do not have enough information…" answer because
 the intern's allowed labels are `["INTERN", "PUBLIC"]` and `CLevel` is filtered
 out of the retrieval.
 
+## Validation & RAG Evaluation
+
+A full evaluation harness lives in `backend/eval/`. The methodology — written
+for an academic defense — is in [`EVALUATION.md`](./EVALUATION.md).
+
+```bash
+# from backend/, with the index already built:
+python -m eval.run_evaluation               # full ablation (Guard ON vs OFF) + LLM judge
+python -m eval.run_evaluation --no-judge    # faster, no Ollama needed
+python -m eval.rbac_tests --base-url http://localhost:8000   # live API security tests
+```
+
+What it measures:
+
+- **Retrieval**: Precision@k, Recall@k, MRR, Hit Rate (label-level).
+- **RBAC isolation**: Authorization Precision, Authorization Leak Rate,
+  Refusal Rate on denial cases, Forbidden-Term Containment.
+- **Generation**: Keyword Coverage, cosine Answer Similarity to gold,
+  RAGAS-style Faithfulness & Answer Relevance via Ollama-as-judge.
+- **Ablation**: every metric is run twice — Silent Guard ON vs OFF —
+  to isolate the security contribution of the guard.
+
+Reports are written to `backend/eval/results/report.md` and `results.json`.
+
 ## Production checklist
 
 - [ ] Replace `JWT_SECRET` with a 32+ byte random value, kept in a secret store.
