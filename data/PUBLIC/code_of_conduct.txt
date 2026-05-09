@@ -1,4 +1,4 @@
-ACME Code of Conduct (PUBLIC)
+TEST Code of Conduct (PUBLIC)
 
 All employees, contractors, and interns must adhere to the following:
 
@@ -7,7 +7,7 @@ All employees, contractors, and interns must adhere to the following:
 3. Avoid conflicts of interest; disclose any potential conflicts to your manager.
 4. No harassment, discrimination, or retaliation of any kind.
 5. Comply with all applicable laws including export controls and anti-bribery rules.
-6. Report concerns via the ethics hotline at ethics@acme.example.com.
+6. Report concerns via the ethics hotline at ethics@TEST.example.com.
 
 Violations may result in disciplinary action up to and including termination.
-This document applies to everyone at ACME.
+This document applies to everyone at TEST.

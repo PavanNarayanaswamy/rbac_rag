@@ -191,6 +191,19 @@ out of the retrieval.
 - [ ] Consider per-document ACLs (`access_labels: ["ENGG","SALES"]` on a
       single chunk) by switching the filter to `$in` over a list field.
 
-## License
 
-MIT (see source headers).
+
+
+
+
+
+
+
+
+
+
+
+
+
+ssh -L 11434:localhost:11434 ubuntu@3.86.247.241
+

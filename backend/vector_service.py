@@ -43,7 +43,7 @@ CHROMA_DIR = Path(os.getenv("RBAC_CHROMA_DIR", str(DEFAULT_CHROMA_DIR)))
 COLLECTION_NAME = os.getenv("RBAC_COLLECTION", "rbac_rag")
 
 EMBED_MODEL = os.getenv("EMBED_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2")
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.1:8b")
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "800"))
@@ -248,7 +248,7 @@ def retrieve(question: str, allowed_labels: List[str], top_k: int = 4) -> List[S
 # Generation
 # ---------------------------------------------------------------------------
 SYSTEM_PROMPT = (
-    "You are an internal assistant for ACME Corporation. "
+    "You are an internal assistant for TEST Corporation. "
     "Answer the user's question using ONLY the context provided. "
     "If the context does not contain enough information, say 'I do not have "
     "enough information in the documents accessible to your role.' "

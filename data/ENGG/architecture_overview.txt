@@ -1,4 +1,4 @@
-ACME Engineering - System Architecture Overview (ENGG)
+TEST Engineering - System Architecture Overview (ENGG)
 
 Primary Stack:
 - Backend: Python 3.11, FastAPI, SQLAlchemy, PostgreSQL 15, Redis 7.

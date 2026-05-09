@@ -1,6 +1,6 @@
-ACME Corporation - Company Overview (PUBLIC)
+TEST Corporation - Company Overview (PUBLIC)
 
-ACME Corporation is a global technology company founded in 2010, headquartered in San Francisco, California.
+TEST Corporation is a global technology company founded in 2010, headquartered in San Francisco, California.
 We build enterprise software for the manufacturing, logistics, and retail sectors.
 
 Our mission: "Empower every business to operate intelligently."
@@ -14,5 +14,5 @@ Public values:
 - Long-term thinking
 - Trust and transparency
 
-For media inquiries, contact press@acme.example.com.
+For media inquiries, contact press@TEST.example.com.
 This document is publicly accessible to ALL employees regardless of role.

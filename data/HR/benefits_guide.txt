@@ -1,7 +1,7 @@
-ACME Benefits Guide FY2026 (HR)
+TEST Benefits Guide FY2026 (HR)
 
 Health:
-- Medical: Aetna PPO and HMO; ACME pays 90% of employee premium, 75% dependent.
+- Medical: Aetna PPO and HMO; TEST pays 90% of employee premium, 75% dependent.
 - Dental: MetLife. Vision: VSP.
 - Mental health: Spring Health, 12 free sessions per year.
 
